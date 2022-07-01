@@ -21,4 +21,9 @@
 4. Запустить все ячейки.
 
 
+RDRB_ESRGAN_X4.pth
+https://drive.google.com/drive/u/0/folders/17VYV_SoZZesU6mbxz2dMAIccSSlqLecY
 
+
+скачать всё и заменить CycleGAN/checkpoints
+https://drive.google.com/drive/folders/1KC7TWXIOqX1oEzp_ur74njAqJjL4753S?usp=sharing

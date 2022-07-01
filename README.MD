@@ -26,7 +26,19 @@
 
 ![Screenshot_20220701-130124_Telegram](https://user-images.githubusercontent.com/62743692/176903788-d4d4e3eb-b0d0-4c4a-ad88-5be819be1e20.jpg)---->>>
 ![Screenshot_20220701-130135_Telegram](https://user-images.githubusercontent.com/62743692/176903782-fa20e1b2-a46c-4de1-8c83-a737a6f2d921.jpg)
+
+
+https://user-images.githubusercontent.com/62743692/176929922-7a23df1f-3195-470d-b8bf-24fd7a45ac2b.mp4
+
+https://user-images.githubusercontent.com/62743692/176930667-d829009f-9613-43eb-92f5-fa83a16a0d28.mp4
+
+
+
 # Установка:
+
+
+
+
 
 1 способ:
 1. Последовательно прописать команды:

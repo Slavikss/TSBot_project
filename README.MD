@@ -53,7 +53,7 @@ source venv/bin/activate
 
 pip install -r requirements.txt
 ```
-2. В папке venv создать файл token.env и вставить токен вашего бота(TOKEN = ____) 
+2. В папке `venv` создать файл `token.env` и вставить токен вашего бота(TOKEN = ____) 
 3. Скачать [веса](https://drive.google.com/drive/u/0/folders/17VYV_SoZZesU6mbxz2dMAIccSSlqLecY) модели `RDRB_ESRGAN_X4.pth` и поместить в `ESRGAN/models/`
 4. Скачать [веса](https://drive.google.com/drive/folders/1KC7TWXIOqX1oEzp_ur74njAqJjL4753S?usp=sharing) для CycleGAN и поместить их в `CycleGAN/checkpoints/`
 3. Выполнить `python3 main.py`, 

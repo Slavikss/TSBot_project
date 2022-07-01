@@ -65,9 +65,6 @@ The paper is accepted to [ECCV2018 PIRM Workshop](https://pirm2018.org/).
         year = {2018}
     }
 
-<p align="center">
-  <img src="figures/baboon.jpg">
-</p>
 
 The **RRDB_PSNR** PSNR_oriented model trained with DF2K dataset (a merged dataset with [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) and [Flickr2K](http://cv.snu.ac.kr/research/EDSR/Flickr2K.tar) (proposed in [EDSR](https://github.com/LimBee/NTIRE2017))) is also able to achive high PSNR performance.
 
@@ -131,19 +128,11 @@ We improve the [SRGAN](https://arxiv.org/abs/1609.04802) from three aspects:
 
 In contrast to SRGAN, which claimed that **deeper models are increasingly difficult to train**, our deeper ESRGAN model shows its superior performance with easy training.
 
-<p align="center">
-  <img height="120" src="figures/architecture.jpg">
-</p>
-<p align="center">
-  <img height="180" src="figures/RRDB.png">
-</p>
 
 ## Network Interpolation
 We propose the **network interpolation strategy** to balance the visual quality and PSNR.
 
-<p align="center">
-  <img height="500" src="figures/net_interp.jpg">
-</p>
+
 
 We show the smooth animation with the interpolation parameters changing from 0 to 1.
 Interestingly, it is observed that the network interpolation strategy provides a smooth control of the RRDB_PSNR model and the fine-tuned ESRGAN model.
@@ -166,22 +155,13 @@ namely BN artifacts, occasionally appear among iterations and different settings
 violating the needs for a stable performance over training. We find that
 the network depth, BN position, training dataset and training loss
 have impact on the occurrence of BN artifacts.
-<p align="center">
-  <img src="figures/BN_artifacts.jpg">
-</p>
+
 
 ## Useful techniques to train a very deep network
 We find that residual scaling and smaller initialization can help to train a very deep network. More details are in the Supplementary File attached in our [paper](https://arxiv.org/abs/1809.00219).
 
-<p align="center">
-  <img height="250" src="figures/train_deeper_neta.png">
-  <img height="250" src="figures/train_deeper_netb.png">
-</p>
 
 ## The influence of training patch size
 We observe that training a deeper network benefits from a larger patch size. Moreover, the deeper model achieves more improvement (∼0.12dB) than the shallower one (∼0.04dB) since larger model capacity is capable of taking full advantage of
 larger training patch size. (Evaluated on Set5 dataset with RGB channels.)
-<p align="center">
-  <img height="250" src="figures/patch_a.png">
-  <img height="250" src="figures/patch_b.png">
-</p>
+

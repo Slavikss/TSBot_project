@@ -63,7 +63,7 @@ pip install -r requirements.txt
 1. Загрузить папку с проектом на свой `GoogleDrive`.
 2. Открыть `TSBot_project.ipynb`.
 3. Примонтировать свой `GoogleDrive` к `Colab`.
-4. 3. Скачать [веса](https://drive.google.com/drive/u/0/folders/17VYV_SoZZesU6mbxz2dMAIccSSlqLecY) модели `RDRB_ESRGAN_X4.pth` и поместить в `ESRGAN/models/`
+4. Скачать [веса](https://drive.google.com/drive/u/0/folders/17VYV_SoZZesU6mbxz2dMAIccSSlqLecY) модели `RDRB_ESRGAN_X4.pth` и поместить в `ESRGAN/models/`
 5. Скачать [веса](https://drive.google.com/drive/folders/1KC7TWXIOqX1oEzp_ur74njAqJjL4753S?usp=sharing) для CycleGAN и поместить их в `CycleGAN/checkpoints/`
 6. Вставить токен в `TOKEN`.
 7. Запустить все ячейки.

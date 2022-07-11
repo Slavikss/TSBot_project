@@ -18,7 +18,7 @@
 <strong>Все операции асинхронны, одному пользователю нельзя одновременно обрабатывать больше чем одно изображение. При попытке загрузить фото, или выбрать другую категорию во время процессинга выйдет соответствующее предупреждение.</strong>
 
 # Примеры работы:
-![Screenshot_20220701-130256_Telegram](https://user-images.githubusercontent.com/62743692/176903471-eee61e4a-c2cd-4ef3-8284-89a7f55b476c.jpg)<h1>→→→→→→→</h1>
+![Screenshot_20220701-130256_Telegram](https://user-images.githubusercontent.com/62743692/176903471-eee61e4a-c2cd-4ef3-8284-89a7f55b476c.jpg)<big>→→→→→→→</big>
 ![Screenshot_20220701-130321_Telegram](https://user-images.githubusercontent.com/62743692/176903482-0d401b0b-0dd0-4ece-95e9-6e54797f239a.jpg)
 
 ![Screenshot_20220701-130146_Telegram](https://user-images.githubusercontent.com/62743692/176903680-dd1388ec-c1e1-4305-a373-96b599927d38.jpg)→→→→→→→

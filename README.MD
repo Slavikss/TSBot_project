@@ -1,23 +1,21 @@
-# Оглавление:
-Этот асинхронный [бот](https://t.me/St_srbot) предназначен для переноса стиля с помощью [CycleGAN](https://github.com/junyanz/CycleGAN), 
-[медленного алгоритма](https://pytorch.org/tutorials/advanced/neural_style_tutorial.html), а также повышения разрешения изображения 
-с помощью [ESRGAN](https://pytorch.org/tutorials/advanced/neural_style_tutorial.html). 
+# Content:
+This asynchronous [bot](https://t.me/St_srbot) designed for transfer style with [CycleGAN](https://github.com/junyanz/CycleGAN), 
+[slow algorithm](https://pytorch.org/tutorials/advanced/neural_style_tutorial.html) and also to increase the resolution of the image using [ESRGAN](https://pytorch.org/tutorials/advanced/neural_style_tutorial.html). 
 
-# Как это работает:
-1.Изначально бот приветствует пользователя, затем тот выбирает одну из 7 возможных категорий для преобразования изображений: 
-1. Summer⇄winter,  
-2. Photo⇄Monet(стиль Клода Моне)
-3. Photo⇄Cezanne(стиль Поля Сезанна)
-4. Photo⇄Ukiyoe(стиль изобр. искусства Японии)
-5. Kyoto⇄Vangogh(стиль Винсента Ван Гога)
-6. Повышение разрешения изображения
-7. Собственное изображение для переноса стиля
+# How it works:
+Initially, the bot welcomes the user, then he chooses one of 7 possible categories for image conversion:
+1. Summer⇄winter,
+2. Photo⇄Monet(Claude Monet style)
+3. Photo⇄Cezanne(style of Paul Cezanne)
+4. Photo⇄Ukiyoe(image style arts of Japan)
+5. Kyoto⇄Vangogh(Vincent Van Gogh style)
+6. Image resolution improvement
+7. Custom image for style transfer
 
-2. После этого бот принимает изображения выбранного стиля от пользователя, обрабатывает и отправляет ему обратно.
+2. After that, the bot accepts images of the selected style from the user, processes and sends them back to him.
+<strong>All operations are asynchronous, it is not allowed to process more than one image for one user at the same time. When attempting to upload photo, or choose another category while image processe, bot raises warning. </strong>
 
-<strong>Все операции асинхронны, одному пользователю нельзя одновременно обрабатывать больше чем одно изображение. При попытке загрузить фото, или выбрать другую категорию во время процессинга выйдет соответствующее предупреждение.</strong>
-
-# Примеры работы:
+# Examples of work:
 1.
 ![Screenshot_20220701-130256_Telegram](https://user-images.githubusercontent.com/62743692/176903471-eee61e4a-c2cd-4ef3-8284-89a7f55b476c.jpg)→→→→→→→
 ![Screenshot_20220701-130321_Telegram](https://user-images.githubusercontent.com/62743692/176903482-0d401b0b-0dd0-4ece-95e9-6e54797f239a.jpg)
@@ -38,14 +36,14 @@ https://user-images.githubusercontent.com/62743692/176930667-d829009f-9613-43eb-
 
 
 
-# Установка:
+# Installation:
 
 
 
 
 
-1 способ:
-1. Последовательно прописать команды:
+1-st way:
+1. Sequentially write this commands:
 ```
 git clone https://github.com/Slavikss/TSBot_project.git
 
@@ -57,18 +55,18 @@ source venv/bin/activate
 
 pip install -r requirements.txt
 ```
-2. В папке `venv` создать файл `token.env` и вставить токен вашего бота(`TOKEN` = ____) 
-3. Скачать [веса](https://drive.google.com/drive/u/0/folders/17VYV_SoZZesU6mbxz2dMAIccSSlqLecY) модели `RDRB_ESRGAN_X4.pth` и поместить в `ESRGAN/models/`
-4. Скачать [веса](https://drive.google.com/drive/folders/1KC7TWXIOqX1oEzp_ur74njAqJjL4753S?usp=sharing) для CycleGAN и поместить их в `CycleGAN/checkpoints/`
-3. Выполнить `python3 main.py`, 
- В случае успешной загрузки бота, он пропишет соответствующую строку в консоли.
+2.  Create file `token.env` in `venv` dir and insert your bot's token(`TOKEN` = ____) 
+3. Download ESRGAN's [weights](https://drive.google.com/drive/u/0/folders/17VYV_SoZZesU6mbxz2dMAIccSSlqLecY)(`RDRB_ESRGAN_X4.pth`) and put in `ESRGAN/models/`
+4. Download CycleGAN's [weights](https://drive.google.com/drive/folders/1KC7TWXIOqX1oEzp_ur74njAqJjL4753S?usp=sharing) and put in `CycleGAN/checkpoints/`
+3. Run `python3 main.py`, 
+ If the bot is successfully loaded, it will write the corresponding line in the console.
 ---
-2 способ: 
-1. Загрузить папку с проектом на свой `GoogleDrive`.
-2. Открыть `TSBot_project.ipynb`.
-3. Примонтировать свой `GoogleDrive` к `Colab`.
-4. Скачать [веса](https://drive.google.com/drive/u/0/folders/17VYV_SoZZesU6mbxz2dMAIccSSlqLecY) модели `RDRB_ESRGAN_X4.pth` и поместить в `ESRGAN/models/`
-5. Скачать [веса](https://drive.google.com/drive/folders/1KC7TWXIOqX1oEzp_ur74njAqJjL4753S?usp=sharing) для CycleGAN и поместить их в `CycleGAN/checkpoints/`
-6. Вставить токен в `TOKEN`.
-7. Запустить все ячейки.
+2 way: 
+1. Download folder with project to your `GoogleDrive`.
+2. Open `TSBot_project.ipynb`.
+3. Mount your `GoogleDrive` к `Colab`.
+4. Download ESRGAN's [weights](https://drive.google.com/drive/u/0/folders/17VYV_SoZZesU6mbxz2dMAIccSSlqLecY)(`RDRB_ESRGAN_X4.pth`) and put in `ESRGAN/models/`
+5. Download CycleGAN's [weights](https://drive.google.com/drive/folders/1KC7TWXIOqX1oEzp_ur74njAqJjL4753S?usp=sharing) and put in `CycleGAN/checkpoints/`
+6. Insert bot's token in `TOKEN`.
+7. Run all cells.
 
